@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #090909;
+  --color-card: #111111;
+  --color-red: #EF233C;
+  --color-red-dark: #C1122F;
+  --color-border: #292929;
+}
+
+body {
+  background-color: #090909;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom dark red scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+::-webkit-scrollbar-thumb {
+  background: #292929;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #EF233C;
+}
+
+.glow-red {
+  box-shadow: 0 0 20px -2px rgba(239, 35, 60, 0.4);
+}
